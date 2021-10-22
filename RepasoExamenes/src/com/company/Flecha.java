@@ -12,7 +12,7 @@ public class Flecha {
             altura = sc.nextInt();
         } while (altura<3 || altura%2==0);
 
-        
+
 
     }
 }
