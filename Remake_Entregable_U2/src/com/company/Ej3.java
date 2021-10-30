@@ -31,7 +31,7 @@ public class Ej3 {
         System.out.println("¿Tiene tarjeta CineCampa?: (s/n)");
         tarjeta = sc.nextLine();
 
-        if(dia.equals("miercoles")){
+        if(dia.equalsIgnoreCase("miercoles")){
             precioEntradas=(PRECIO_MIERCOLES*numPersonas);
         } else if(dia.equalsIgnoreCase("jueves")){
             if(numPersonas%2==0){

@@ -32,7 +32,7 @@ public class Ej2 {
                 num/=10;
                 if (solo==cifra){
                     cantOcurrecias++;
-                    posicionCifra += String.valueOf(posiciones);
+                    posicionCifra += String.valueOf(posiciones)+" - ";
                 }
                 posiciones++;
             }
