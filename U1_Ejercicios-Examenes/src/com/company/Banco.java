@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class Banco {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String cuentaUsuario;
+        String cuentaUsuario, banco = "", sucursal ="", control="", cuenta="";
 
-        System.out.println("Esciba su cuenta bancaria");
+        System.out.println("Escriba su cuenta bancaria");
         cuentaUsuario = sc.nextLine();
 
-        for (int i = 0; i < cuentaUsuario.length(); i++) {
 
-        }
+
+        
+
     }
 }
