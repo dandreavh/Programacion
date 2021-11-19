@@ -24,13 +24,23 @@ public class Actividad_2_extra {
         }
 
         System.out.println(Arrays.toString(palabras));
+        System.out.println(Arrays.toString(resultado));
 
         for (int i = 0; i < palabras.length; i++) {
-
+            if (!esta(colores,palabras[i])){
+                resultado = Arrays.copyOf(resultado, resultado.length+1);
+                resultado[resultado.length-1] = palabras[i];
+            }
         }
+        System.out.println(Arrays.toString(resultado));
     }
-    public static boolean esta(String[] palabras, String palabra){
 
+    public static boolean esta(String[] palabras, String palabra){
+        for (int i = 0; i < palabras.length; i++) {
+            if(palabras[i].equals(palabra)){
+                return true;
+            }
+        }
         return false;
     }
 }
