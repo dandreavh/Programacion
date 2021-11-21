@@ -22,48 +22,56 @@ public class Actividad_3_extra {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int [] mesas = new int[10];
-        int comensales;
+        int[] mesas = new int[10];
+        int personas;
+        boolean sentados = false;
+        final int HUECOS_MESAS = 4; // Se asigna una capacidad por defecto
 
-        for (int i = 0; i < mesas.length; i++) {
-            mesas[i] = (int) (Math.random()*(5-0)+0);
-        }
-        System.out.println(Arrays.toString(mesas));
-
-        System.out.println("¿Cuántos son?");
-        comensales = sc.nextInt();
-
-        while (comensales>5){
-            System.out.println("Lo siento, no admitimos grupos con esa cantidad de personas, haga grupos de 4 personas como máximo e intente de nuevo");
-            comensales = sc.nextInt();
+        for (int i = 0; i < mesas.length; i++) { // Indica cúantos sitios están ocupados en las mesas con un máximo de 4
+            mesas[i] = (int) (Math.random()*5);
         }
 
-        if(comensales==-1){
-            System.out.println("Gracias. Hasta pronto");
-        } else{
-            for (int i = 0; i < mesas.length; i++) {
-                if(HayHueco(mesas, comensales)){
-                    if(mesas[i]==0){
-                        mesas[i] += comensales;
-                        System.out.println("Tenemos una mesa libre. Por favor, siéntense en la mesa " +i);
-                        break;
-                    } else{
-                        mesas[i] += comensales;
-                        System.out.println("Tendrá que compartir mesa. Por favor, siéntense en la mesa " +i);
+        System.out.println(Arrays.toString(mesas)); // Vemos cuántos sitios hay ocupados en cada mesa
+
+        do {
+            System.out.println("Introduce el número de comensales");
+            personas = sc.nextInt();
+
+            if (mesaLibre(mesas) && personas<5) { // se evalúa con la función si hay mesas libres y se discrimina si hay grupos mayores a 4
+                for (int i = 0; i < mesas.length ; i++) {
+                    if (mesas[i]==0) {
+                        sentados = true; // indicamos que hay gente sentada para cuando no haya sitios en 0 valorar si caben compartiendo
+                        mesas[i] = personas; // Actualizamos el valor de esa posición
+                        System.out.println("Tenemos hueco libre en la mesa " +(i+1));
                         break;
                     }
-                } else{
-                    System.out.println("No tenemos sitio disponible");
-                    break;
                 }
+            } else if (personas>4) {
+                System.out.println("No tenemos capacidad para grupos tan grandes, divídalos en más pequeños.");
+            } else{
+                for (int i = 0; i < mesas.length; i++) { // evalúa si en las mesas ocupadas hay posibilidad de compartir
+                    if (mesas[i]+personas <= HUECOS_MESAS) {
+                        sentados = true;
+                        mesas[i]+= personas;
+                        System.out.println("Todas la mesas está ocupadas, pero hay sitios para compartir. Se pueden sentar en la mesa " +(i+1));
+                        break;
+                    }
+                }
+                System.out.println("Capacidad actual del restaurante: " +Arrays.toString(mesas));
             }
-        }
 
+            if (sentados) {
+                System.out.println("Clientes aposentados");
+            } else {
+                System.out.println("No hay sitio en el restaurante");
+            }
+
+        } while (personas>0);
     }
 
-    public static boolean HayHueco(int[]mesas, int comensales){
-        for (int i = 0; i < mesas.length; i++) {
-            if(mesas[i]+comensales<4){
+    public static boolean mesaLibre(int[] mesas) {
+        for(int m: mesas) {
+            if (m==0) {
                 return true;
             }
         }

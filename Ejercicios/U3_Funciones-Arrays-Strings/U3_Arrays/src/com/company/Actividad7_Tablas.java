@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Actividad7 {
+public class Actividad7_Tablas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //        int[] notasPrimerTrim = new int[5];

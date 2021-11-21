@@ -3,7 +3,7 @@ package com.company;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Actividad10 {
+public class Actividad10_Tablas {
     // Escribir la función rellenaPares() a la que se le pasa como parámetro una tabla unidimensional
     // que debe rellenar de la siguiente forma: se leerá por teclado una serie de números, guardando en la
     // tabla los pares hasta que esté llena,

@@ -3,7 +3,7 @@ package com.company;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Actividad6 {
+public class Actividad6_Tablas {
     // Implementar una función sinRepetidos() con el prototipo:
     //int[] sinRepetidos(int t[]
     //que construye y devuelve una tabla del tamaño apropiado, con los elementos de t, donde se han eliminado los datos repetidos.

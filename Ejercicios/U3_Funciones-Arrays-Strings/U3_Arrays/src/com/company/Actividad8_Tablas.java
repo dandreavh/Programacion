@@ -1,6 +1,6 @@
 package com.company;
 
-public class Actividad8 {
+public class Actividad8_Tablas {
     // Crear una tabla bidimensional de tamaño 5x5 y rellenarla de la siguiente forma:
     // la posición [n,m] debe contener n+m. Después, se debe mostrar su contenido.
     public static void main(String[] args) {
