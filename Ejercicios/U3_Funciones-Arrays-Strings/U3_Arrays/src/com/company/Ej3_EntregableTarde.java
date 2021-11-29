@@ -11,31 +11,31 @@ public class Ej3_EntregableTarde {
         Scanner sc = new Scanner(System.in);
         int n;
         int[][] caja;
+        int[][] cajaGirada;
+
 
         System.out.println("Indique un tamaño");
         n = sc.nextInt();
         caja = new int[n][n];
+        cajaGirada = new int[n][n];
 
-        int i;
-        int j;
-
-        for (i = 0; i < caja.length; i++) {
-            for (j = 0; j < caja[i].length; j++) {
-                caja[i][j] = (int) (Math.random()*(201-100)+100);
-                System.out.print("[ "+caja[i][j]+" ]");
+        for (int i = 0; i < caja.length; i++) {
+            for (int j = 0; j < caja[i].length; j++) {
+                int valor = (int) (Math.random()*(201-100)+100);
+                caja[i][j] = valor;
+                cajaGirada[j][caja.length-1-i] = valor;
+               // System.out.print("[ "+caja[i][j]+" ]");
+               // System.out.print("[ "+cajaGirada[j][caja.length-1-i]+" ]");
             }
-            System.out.println();
+            // System.out.println();
         }
 
-        System.out.println("Giro de 90ª");
-
-        for (i = 0; i < caja.length; i++) {
-            for (j = 0; j < caja[i].length; j++) {
-
-                System.out.print("[ "+caja[i][j]+" ]");
-            }
-            System.out.println();
+        for (int[] row:caja) {
+            System.out.println(Arrays.toString(row));
         }
-
+        System.out.println("****** Girado *******");
+        for (int[] row:cajaGirada) {
+            System.out.println(Arrays.toString(row));
+        }
     }
 }

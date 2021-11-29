@@ -18,14 +18,22 @@ public class Ej1_EntregableTarde {
         int[] soloPrimos = new int[0];
         for (int i = 0; i < numeros.length; i++) {
             int num = numeros[i];
-            for (int j = 2; j < num; j++) {
-                if(num%j!=0){
-                    soloPrimos = Arrays.copyOf(soloPrimos, soloPrimos.length+1);
-                    soloPrimos[soloPrimos.length-1] = num;
-                    break;
-                }
+            if(esPrimo(num)){
+                soloPrimos = Arrays.copyOf(soloPrimos, soloPrimos.length+1);
+                soloPrimos[soloPrimos.length-1] = num;
             }
         }
         return soloPrimos;
+    }
+    public static boolean esPrimo(int n){
+        boolean primo = true;;
+        for (int j = 2; j < n; j++) {
+            primo = true;
+            if(n%j==0){
+                primo = false;
+                break;
+            }
+        }
+        return primo;
     }
 }

@@ -13,7 +13,7 @@ public class Actividad_4_extra {
 
         for (int i = 0; i < tablero.length; i++) {
             for (int j = 0; j < tablero[i].length; j++) {
-                tablero[i][j]=".";
+                tablero[i][j]=" ";
             }
         }
 
@@ -25,7 +25,7 @@ public class Actividad_4_extra {
 
         tablero[fila][col] = "X"; // ubicación de la ficha
 
-        System.out.println("Indique si está jugando con alfil (1), torre (2), dama (3), rey (4)");
+        System.out.println("Indique si está jugando con alfil (1), torre (2), dama (3), rey (4), caballo (5)");
         pieza = sc.nextInt();
 
         if(pieza==1){ // --------------------------------------------------ALFIL
@@ -67,7 +67,7 @@ public class Actividad_4_extra {
             }
             System.out.println();
         } else if (pieza==2){ // -----------------------------------------------TORRE
-            //Superior
+            /*//Superior
             int i = fila-1;
             int j = col;
             while (estaDentro(i,j)) {
@@ -112,55 +112,39 @@ public class Actividad_4_extra {
                 j++;
             }
             System.out.println();
-        } else if (pieza==3){ // DAMA
-            //Superior
-            int i = fila-1;
-            int j = col;
-            while (estaDentro(i,j)) {
-                tablero[i][j] = "*";
-                System.out.print(columnas[j]+""+(8-i)+" ");
-                i--;
+            */
+
+            // ********* CON SOLO DOS PARTES **********
+
+            //Superior e Inferior (cambia fila)
+            for (int i = 0; i < tablero.length; i++) {
+                if(i!=fila){
+                    tablero[i][col] = "*";
+                }
             }
-            System.out.println();
-            //Inferior
-            i = fila+1;
-            j = col;
-            while (estaDentro(i,j)) {
-                tablero[i][j] = "*";
-                System.out.print(columnas[j]+""+(8-i)+" ");
-                i++;
+            // Derecha e Izquierda (cambia columna)
+            for (int j = 0; j < tablero[fila].length; j++) {
+                if(j!=col){
+                    tablero[fila][j] = "*";
+                }
             }
-            System.out.println();
-            //Inferior
-            i = fila+1;
-            j = col;
-            while (estaDentro(i,j)) {
-                tablero[i][j] = "*";
-                System.out.print(columnas[j]+""+(8-i)+" ");
-                i++;
+
+        } else if (pieza==3){ // ------------------------------------- DAMA
+            //Superior e Inferior (cambia fila)
+            for (int i = 0; i < tablero.length; i++) {
+                if(i!=fila){
+                    tablero[i][col] = "*";
+                }
             }
-            System.out.println();
-            //Lateral izquierdo
-            i = fila;
-            j = col-1;
-            while (estaDentro(i,j)) {
-                tablero[i][j] = "*";
-                System.out.print(columnas[j]+""+(8-i)+" ");
-                j--;
+            // Derecha e Izquierda (cambia columna)
+            for (int j = 0; j < tablero[fila].length; j++) {
+                if(j!=col){
+                    tablero[fila][j] = "*";
+                }
             }
-            System.out.println();
-            //Lateral derecho
-            i = fila;
-            j = col+1;
-            while (estaDentro(i,j)) {
-                tablero[i][j] = "*";
-                System.out.print(columnas[j]+""+(8-i)+" ");
-                j++;
-            }
-            System.out.println();
             //Diagonal Superior Derecha
-            i = fila-1;
-            j = col+1;
+            int i = fila-1;
+            int j = col+1;
             while (estaDentro(i,j)) {
                 tablero[i][j] = "*";
                 System.out.print(columnas[j]+""+(8-i)+" ");
@@ -247,7 +231,21 @@ public class Actividad_4_extra {
             tablero[i][j] = "*";
             System.out.print(columnas[j]+""+(8-i)+" ");
             System.out.println();
+        } else if (pieza==5){ // --------------------------------------------------- CABALLO
+            for (int i = 0; i < tablero.length; i++) {
+                for (int j = 0; j < tablero[i].length; j++) {
+                    if(((i==fila-2) && (j == col-1 || j==col+1)) ||
+                            ((i==fila-1) && (j == col-2 || j==col+2))||
+                            ((i==fila+1) && (j == col-2 || j==col+2))||
+                            ((i==fila+2) && (j == col-1 || j==col+1))){
+                        tablero[i][j] = "*";
+                        System.out.print(columnas[j]+" "+(8-i)+" ");
+                    }
+                }
+            }
+            System.out.println();
         }
+
         for (String[] row: tablero) {
             System.out.println(Arrays.toString(row));
         }

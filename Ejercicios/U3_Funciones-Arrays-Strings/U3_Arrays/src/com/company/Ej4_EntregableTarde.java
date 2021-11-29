@@ -18,9 +18,11 @@ public class Ej4_EntregableTarde {
         String posicion;
         char fila;
         char columna;
+        int cantBombas = 0;
 
         System.out.println("Introduzca el tamaño del tablero");
         n = sc.nextInt();
+        sc.nextLine();
 
         tablero = new String[n][n];
 
@@ -40,22 +42,50 @@ public class Ej4_EntregableTarde {
         do{
             System.out.println("Indique una posición. Ejemplo: 1,0");
             posicion = sc.nextLine();
-            fila = posicion.charAt(0);
+            fila = (posicion.charAt(0));
             columna = posicion.charAt(2);
 
             for (int i = 0; i < tablero.length; i++) {
                 for (int j = 0; j < tablero[i].length; j++) {
-                    if((i==fila && j==columna) && tablero[i][j].equals(" X ")){
-                        System.out.println("La posición "+(posicion)+" tiene una bomba, está muerto");
-                        bomba = true;
-                        break;
-                    } else{
-                        System.out.println("La posición "+(posicion)+" tiene xxx bombas alrededor");
+                    fila -=1;
+                    columna-=1;
+                    if(estaDentro(fila, columna, n)){
+                        if(tablero[fila][columna]==" X "){
+                            cantBombas++;
+                        }
                     }
+//                    if(tablero[fila-1][columna-1]==" X " || tablero[fila][columna]==" X " || tablero[fila+1][columna-1]==" X "
+//                        || tablero[fila+1][columna]==" X " || tablero[fila+1][columna+1]==" X " || tablero[fila-1][columna+1]==" X "
+//                            || tablero[fila][columna+1]==" X " || tablero[fila-1][columna]==" X "){
+//                        cantBombas++;
+//                    }
                 }
             }
+            System.out.println("La posición "+(posicion)+" tiene " +cantBombas+ " bombas, pruebe otra posición");
 
-        } while (bomba = false);
+        } while (!hayBomba(bomba, tablero, fila, columna));
+
+        System.out.println("La posición "+(posicion)+" tiene una bomba, está muerto");
 
     }
+
+    public static boolean hayBomba(boolean bomba, String[][] tablero, char fila, char columna) {
+        boolean hay = false;
+        for (int i = 0; i < tablero.length; i++) {
+            for (int j = 0; j < tablero[i].length; j++) {
+                if((i==fila && j==columna) && tablero[i][j].equals(" X ")){
+                    hay = true;
+                    break;
+                }
+
+            }
+        }
+        return hay;
+    }
+
+    public static boolean estaDentro(int dimension, int i, int j) {
+        return (i>=0 && i<=dimension && j>=0 && j<=dimension);
+    }
+
+
 }
