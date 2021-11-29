@@ -16,16 +16,23 @@ public class Ej1_EntregableManana {
 
     }
     public static int[] mezcla(int[] a, int[] b){
-        int [] resultado = new int[a.length+b.length];
-        int pos =0;
-        for (int i = 0; i < resultado.length; i++) {
-            if(a.length>b.length){
+        int[] resultado = new int[a.length+ b.length];
+        int pos = 0;
+        int tamMenor = (a.length>b.length ? b.length : a.length); // Si a > b, entonces b = tamMenor, si no a = tamMenor
 
-            } else if(a.length<b.length){
+        for (int i = 0; i < tamMenor; i++) { // Se recorre hasta el tamaño del menor
+            resultado[pos] = a[i]; // primero meto lo de a
+            pos++; // aumenta la posición para poder meter el número de b en el siguiente
+            resultado[pos] = b[i]; //  ahora meto lo de b
+            pos++;
+            // cuando se acabe el recorrido habremos llegado gasta el tamaño del que sea menor y ahora nos toca añadir el resto
+        }
 
-            } else{
+        int[] vMayor = (a.length>b.length ? a : b); // escogemos el tamaño del más grande
 
-            }
+        for (int i = tamMenor; i < vMayor.length ; i++) { // vamos a recorrer desde el tamaño del menor (xq hasta ahí lo tenenos, hasta lo que falta
+            resultado[pos] = vMayor[i]; // al resultado que teníamos antes en la siguiente posición vamos a meter lo que falta
+            pos++;
         }
 
         return resultado;
