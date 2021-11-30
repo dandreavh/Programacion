@@ -15,10 +15,24 @@ public class Ej1_Rojo {
         System.out.println(Arrays.toString(unirSinRepetidos(v1,v2)));
     }
     public static boolean esta(int[] vector, int num){
+        int[] v1SinRepes = new int[vector.length];
+
+
         return false;
     }
     public static int[] unirSinRepetidos(int v1[],int[] v2){
         int[] resultado = new int[0];
+        int posicion = 0;
+
+        for (int i = 0; i < resultado.length-v2.length; i++) {
+            resultado[i] = v1[i];
+            posicion++;
+        }
+
+        for (int i = 0; i < resultado.length; i++) {
+            resultado[posicion] = v2[i];
+            posicion++;
+        }
 
         return  resultado;
     }

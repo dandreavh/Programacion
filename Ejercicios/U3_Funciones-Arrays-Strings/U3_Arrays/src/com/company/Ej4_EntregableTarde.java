@@ -22,7 +22,7 @@ public class Ej4_EntregableTarde {
         n = sc.nextInt();
         sc.nextLine();
         tablero = new char[n][n];
-        
+
         System.out.println("Indique una posición. Ejemplo: 1,0");
         posicion = sc.nextLine();
         fila = (posicion.charAt(0));
