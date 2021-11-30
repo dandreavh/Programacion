@@ -9,12 +9,10 @@ public class Actividad1_Tablas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double [] numeros = new double[5];
-
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("Introduzca un número");
             numeros[i] = sc.nextDouble();
         }
-
         System.out.println(Arrays.toString(numeros));
     }
 }
