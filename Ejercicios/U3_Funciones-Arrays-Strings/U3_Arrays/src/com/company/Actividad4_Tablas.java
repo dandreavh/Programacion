@@ -15,7 +15,6 @@ public class Actividad4_Tablas {
         int [] combinacion;
         int [] password;
 
-
         System.out.println("Introduzca una cantidad de dígitos");
         numDigit = sc.nextInt();
         combinacion = new int[numDigit];
@@ -43,6 +42,5 @@ public class Actividad4_Tablas {
                 System.out.println("El número en la posición " +i+ " es correcto");
             }
         }
-
     }
 }
