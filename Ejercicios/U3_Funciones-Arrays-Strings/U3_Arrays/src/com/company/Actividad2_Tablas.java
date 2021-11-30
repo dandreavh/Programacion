@@ -10,17 +10,16 @@ public class Actividad2_Tablas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int cantNum;
+        int [] cadena;
 
         System.out.println("Indique cuántos números desea introducir");
         cantNum = sc.nextInt();
-        int [] cadena = new int [cantNum];
+        cadena = new int [cantNum];
 
         for (int i = cadena.length-1; i >= 0; i--) {
             System.out.println("Escriba un número");
             cadena[i] = sc.nextInt();
         }
-
         System.out.println(Arrays.toString(cadena));
-
     }
 }
