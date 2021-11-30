@@ -33,10 +33,8 @@ public class Actividad3_Tablas {
                 cantCeros++;
             }
         }
-
         mediaPositivos = sumaPositivos / cantPositivos;
         mediaNegativos = sumaNegativos / cantNegativos;
-
         System.out.println("La media de positivos: " +mediaPositivos);
         System.out.println("La media de negativos: " +mediaNegativos);
         System.out.println("Cantidad de ceros: " +cantCeros);
