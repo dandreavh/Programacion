@@ -14,6 +14,7 @@ public class Ej1_EntregableTarde {
         System.out.println("El array original: " +Arrays.toString(numeros));
         System.out.println("El array compuesto por solo primos: " +Arrays.toString(filtraPrimos(numeros)));
     }
+
     public static int[] filtraPrimos(int[] numeros){
         int[] soloPrimos = new int[0];
         for (int i = 0; i < numeros.length; i++) {
@@ -25,6 +26,7 @@ public class Ej1_EntregableTarde {
         }
         return soloPrimos;
     }
+
     public static boolean esPrimo(int n){
         boolean primo = true;;
         for (int j = 2; j < n; j++) {
