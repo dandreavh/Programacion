@@ -9,6 +9,7 @@ public class Actividad5_Tablas {
     // de forma que los 12 números sigan ordenados. Fusionar significa copiar en el orden correcto para que
     // los datos resultantes continúen ordenados sin necesidad de volver a realizar una ordenación.
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         int [] primera = new int [6];
         int [] segunda = new int [6];
