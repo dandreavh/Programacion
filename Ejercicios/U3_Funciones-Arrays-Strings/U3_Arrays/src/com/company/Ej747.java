@@ -15,18 +15,17 @@ public class Ej747 {
         int opcion;
         int numero;
 
-
         do {
             System.out.println("Escriba 1 para añadir un dato, escriba 2 para buscar, escriba 3 para salir del programa");
             opcion = sc.nextInt();
 
             if(opcion==1){
-                System.out.println("Introduca el dato que desea añadir");
+                System.out.println("Introduzca el dato que desea añadir");
                 numero = sc.nextInt();
                 cadena[posicion] = numero;
                 posicion++;
             } else if (opcion==2){
-                System.out.println("Introduca un dato para ver si está en la cadena");
+                System.out.println("Introduzca un dato para ver si está en la cadena");
                 numero = sc.nextInt();
                 boolean datoEsta = false;
                 for (int i = 0; i < posicion; i++) {
