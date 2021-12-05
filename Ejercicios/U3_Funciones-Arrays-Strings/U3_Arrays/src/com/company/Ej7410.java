@@ -7,10 +7,10 @@ public class Ej7410 {
         String[][] cadena = new String[5][5];
 
         for (int i = 0; i < cadena.length; i++) { // filas
-            for (int j = 0; j < cadena[i].length; j++) { //columnas
-                if(i==1){
+            for (int j = 0; j < cadena[i].length; j++) { // columnas
+                if(i==1){ // es la segunda porque empieza en 0
                     System.out.print("A");
-                } else{
+                } else{ // para el resto
                     System.out.print("-");
                 }
             }
