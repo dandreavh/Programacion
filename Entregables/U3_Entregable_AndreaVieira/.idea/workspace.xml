@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d36eb697-365e-42ec-a082-c5192ea9d476" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Ej1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Ej2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Ej3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Ej4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Actividad1_Tablas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Actividad1_Tablas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Actividad2_Tablas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Actividad2_Tablas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Actividad3_Tablas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Actividad3_Tablas.class" afterDir="false" />
@@ -12,10 +16,6 @@
       <change beforePath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Actividad5_Tablas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Actividad5_Tablas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Ej1_EntregableTarde.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Ej1_EntregableTarde.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Ej3_Rojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicios/U3_Funciones-Arrays-Strings/out/production/U3_Arrays/com/company/Ej3_Rojo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Ej1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Ej2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Ej3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Ej4.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +98,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
   <component name="RunManager" selected="Application.Ej1">
     <configuration name="Ej1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
