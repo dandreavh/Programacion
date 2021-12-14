@@ -23,7 +23,5 @@ public class Actividad_5_extra {
         }
 
         System.out.println(Arrays.deepToString(numeros));
-
-
     }
 }
