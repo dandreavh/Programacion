@@ -12,7 +12,8 @@ public class Actividad_1_extra {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] numeros = new int[10];
-        int mayor = 0, menor = 500;
+        int mayor = 0;
+        int menor = 500;
         int eleccion;
         int posicionMayor = 0;
         int posicionMenor = 0;
