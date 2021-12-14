@@ -3,9 +3,9 @@ package com.company;
 import java.util.Arrays;
 
 public class Ej1_Rojo {
-    // Define la función esta  con la siguiente cabecera:
+    // Define la función esta con la siguiente cabecera:
     //public static boolean esta(int[] vector, int num)
-    //Que nos devuelva si un elemento está en un vector(array) unidimensional. Usar dicho elemente para construir la siguiente función:
+    //Que nos devuelva si un elemento está en un vector(array) unidimensional. Usar dicho elemento para construir la siguiente función:
     //public static int[] unirSinRepetidos(int v1[],int[] v2)
     //Que una los dos vectores pero sin elementos repetidos. Usar dicha función en el método main mostrando el vector resultado por pantalla.
     public static void main(String[] args) {
@@ -16,8 +16,6 @@ public class Ej1_Rojo {
     }
     public static boolean esta(int[] vector, int num){
         int[] v1SinRepes = new int[vector.length];
-
-
         return false;
     }
     public static int[] unirSinRepetidos(int v1[],int[] v2){
