@@ -1,0 +1,3 @@
+Hola,
+Soy una carta y el fichero va a contar mis caracteres, líneas y palabras.
+Adiós.
