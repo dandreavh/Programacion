@@ -31,7 +31,5 @@ public class Main {
 
         // CONOCER CANTIDAD DEPARTAMENTOS CREADOS - KNOW NUMBER OF DEPARTMENTS CREATED
         System.out.println(Departamento.getCantDepartamentos());
-
-
     }
 }

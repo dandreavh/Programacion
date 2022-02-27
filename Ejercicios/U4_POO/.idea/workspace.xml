@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e755b7ed-cf83-4e61-8576-d0c819bf52e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/U4_POO_Ejercicios.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/U4_POO_Ejercicios/com/company/Alumno.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/U4_POO_Ejercicios/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/U4_POO_Ejercicios/com/company/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Actividad1/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Actividad1/CuentaCorriente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Actividad1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Actividad2/CuentaCorriente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Actividad2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Actividad5/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Actividad5/Texto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ActividadInicial/Alumno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ActividadInicial/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ActividadInicial/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U3_Examen_AndreaVieiraHernandez/src/com/company/Ej1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U3_Examen_AndreaVieiraHernandez/src/com/company/Ej2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U3_Examen_AndreaVieiraHernandez/src/com/company/Ej3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U3_Examen_AndreaVieiraHernandez/src/com/company/Ej4.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="241g6Yc6FejBhrpci17Z3ZiKwHr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e755b7ed-cf83-4e61-8576-d0c819bf52e2" name="Changes" comment="" />
+      <created>1642803335091</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642803335091</updated>
+    </task>
+    <servers />
+  </component>
+</project>
