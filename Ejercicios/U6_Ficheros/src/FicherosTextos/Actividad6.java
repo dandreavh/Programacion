@@ -1,4 +1,4 @@
-package Tarea1;
+package FicherosTextos;
 
 import java.io.*;
 import java.util.Scanner;

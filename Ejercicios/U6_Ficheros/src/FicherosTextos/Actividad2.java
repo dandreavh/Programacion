@@ -1,4 +1,4 @@
-package Tarea1;
+package FicherosTextos;
 
 import java.io.FileWriter;
 import java.io.IOException;
