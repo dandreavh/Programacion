@@ -7,18 +7,17 @@ public class Main {
     // Pedir un double por consola y guardarlo en un archivo binario.
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double num;
         ObjectOutputStream out = null;
-        FileOutputStream archivo;
 
         try {
-            archivo = new FileOutputStream("numbers.dat");
-            out = new ObjectOutputStream(archivo);
+            FileOutputStream datos = new FileOutputStream("numbers.dat");
+            out = new ObjectOutputStream(datos);
+            double num;
 
             System.out.println("Indique un número doble");
             num = sc.nextDouble();
 
-            out.writeObject(num);
+            out.writeDouble(num);
 
         } catch (Exception e) {
             e.printStackTrace();

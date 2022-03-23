@@ -9,17 +9,22 @@ public class Main {
     // Abrir el archivo del ejercicio anterior, leer el double y mostrarlo por pantalla
     public static void main(String[] args) {
 
-        FileInputStream archivo = null;
         ObjectInputStream in = null;
 
         try {
-            archivo = new FileInputStream("numbers.dat");
-            in = new ObjectInputStream(archivo);
-            System.out.println();
+            FileInputStream datos = new FileInputStream("numbers.dat");
+            in = new ObjectInputStream(datos);
+            double num = in.readDouble();
+            System.out.println("Número " + num);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if (in != null){
+            try{
+                if (in != null){
+                    in.close();
+                }
+            } catch (Exception e){
+                e.printStackTrace();
             }
         }
 
