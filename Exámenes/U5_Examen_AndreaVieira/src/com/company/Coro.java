@@ -29,6 +29,7 @@ public class Coro extends AgrupacionOficial{
         this.num_guitarras = num_guitarras;
     }
 
+    // Comportamiento personalizado
     @Override
     public void cantar_la_presentacion() {
         System.out.println("Cantando la presentación del Coro con nombre " + super.getNombre());

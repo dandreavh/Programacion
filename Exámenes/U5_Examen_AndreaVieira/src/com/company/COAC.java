@@ -28,7 +28,7 @@ public class COAC {
         this.agrupacionesOficiales = agrupacionesOficiales;
     }
 
-    // MÉTODOS PROPIOS
+    // Métodos propios
     public boolean existe_agrupacion(Agrupacion agrupacion) {
         for (Agrupacion a : agrupaciones) {
             if (a.equals(agrupacion)) {

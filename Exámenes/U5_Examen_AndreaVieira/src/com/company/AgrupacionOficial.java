@@ -29,7 +29,7 @@ public abstract class AgrupacionOficial extends Agrupacion {
         this.integrantes = integrantes;
     }
 
-    // MÉTODOS PROPIOS
+    // Métodos propios
     public boolean existe_integrante(Integrante integrante) {
         for (Integrante i : integrantes) {
             if (i.equals(integrante)) {

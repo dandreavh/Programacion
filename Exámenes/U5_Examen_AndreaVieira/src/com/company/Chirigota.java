@@ -18,6 +18,7 @@ public class Chirigota extends AgrupacionOficial implements Callejera{
         this.num_cuples = num_cuples;
     }
 
+    // Comportamiento personalizado
     @Override
     public void cantar_la_presentacion() {
         System.out.println("Cantando la presentación de la Chirigota con nombre " + super.getNombre());

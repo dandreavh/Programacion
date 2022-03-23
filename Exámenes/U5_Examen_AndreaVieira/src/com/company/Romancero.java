@@ -18,6 +18,7 @@ public class Romancero extends Agrupacion implements Callejera{
         this.tematica_cartelon = tematica_cartelon;
     }
 
+    // Comportamiento personalizado
     @Override
     public void cantar_la_presentacion() {
         System.out.println("Cantando la presentación del Romancero con nombre " + super.getNombre());

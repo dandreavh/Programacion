@@ -18,6 +18,7 @@ public class Comparsa extends AgrupacionOficial{
         this.empresa_atrezzo = empresa_atrezzo;
     }
 
+    // Comportamiento personalizado
     @Override
     public void cantar_la_presentacion() {
         System.out.println("Cantando la presentación de la Comparsa con nombre " + super.getNombre());

@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-
+        // pruebas
         Comparsa comparsa1 = new Comparsa("La Comparsita", "Manuel Falla",
                 "Pepito Pérez", "Ramón Pérez", "Tiras de colores",
                 20, "HaciendoTrajes SL");

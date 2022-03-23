@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.Objects;
-
+ // se incorporan en las agrupaciones oficiales
 public class Integrante {
     private int num_participante;
     private String nombre;

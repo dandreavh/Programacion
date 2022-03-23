@@ -67,6 +67,7 @@ public abstract class Agrupacion implements Comparable<Agrupacion>{
         this.cantidad_agrupaciones = cantidad_agrupaciones;
     }
 
+    // Métodos propios
     public abstract void cantar_la_presentacion();
 
     public abstract void hacer_tipo();

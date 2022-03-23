@@ -18,6 +18,7 @@ public class Cuarteto extends AgrupacionOficial implements Callejera{
         this.num_miembros = num_miembros;
     }
 
+    // Comportamiento personalizado
     @Override
     public void cantar_la_presentacion() {
         System.out.println("Cantando la presentación del Cuarteto con nombre " + super.getNombre());
