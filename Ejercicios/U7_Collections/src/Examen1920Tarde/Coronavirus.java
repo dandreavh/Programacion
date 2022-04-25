@@ -158,8 +158,6 @@ public class Coronavirus {
         }
     }
 
-
-
     @Override
     public String toString() {
         return "Coronavirus{" +

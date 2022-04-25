@@ -11,22 +11,32 @@ public class Actividad3 {
         System.out.println("Indique el nombre del fichero");
         nombreFichero = sc.nextLine();
 
-        try {
-            BufferedReader in = new BufferedReader(new FileReader(nombreFichero));
+        BufferedReader in = null;// LECTURA
+        BufferedWriter out = null; // ESCRITURA
 
-            BufferedWriter out = new BufferedWriter(new FileWriter("copia_de_"+nombreFichero));
+        try {
+            in = new BufferedReader(new FileReader(nombreFichero)); // LECTURA
+            out = new BufferedWriter(new FileWriter("copia_de_"+nombreFichero)); // ESCRITURA
+
             String linea = in.readLine();
 
+            // Bucle de control para el control de las líneas que
             while (linea!=null){
-                out.write(linea+"\n");
+                out.write(linea+"\n"); // imporante añadirle el salto de línea
                 linea = in.readLine();
             }
 
-            in.close();
-            out.close();
-
         } catch (IOException e) {
             System.out.println(e.getMessage());
+        } finally {
+            // MUY IMPORTANTE, cerrar los elementos de lectura y escritura
+            try {
+                in.close();
+                out.close();
+
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 }

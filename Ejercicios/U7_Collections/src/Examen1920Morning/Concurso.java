@@ -119,7 +119,7 @@ public class Concurso {
             Iterator<TreeSet<Perro>> it = collection.iterator();
 
             while (it.hasNext()) {
-                Set<Perro> set = it.next(); // guardo raza
+                Set<Perro> set = (Set<Perro>) it.next(); // guardo raza
                 for (Perro perro : set) {
                     out.writeObject(perro); // guardo perro
                 }
