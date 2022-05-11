@@ -104,21 +104,6 @@ public class ClubBaloncesto {
         });
 
         System.out.println(lista);
-
-        /*
-        SABIENDO LAS CLAVES - FORMA FÁCIL
-
-        ArrayList<Jugador> lista = new ArrayList<>(jugadores.get(BAJOS));
-        lista.addAll(jugadores.get(Mediados))
-        lista.addAll(jugadores.get(Altos))
-
-        Collections.sort(lista, new Comparator<Jugador>() {
-            @Override
-            public int compare(Jugador j1, Jugador j2) {
-                return j1.getEdad().compareTo(j2.getEdad());
-            }
-        });
-         */
     }
 
     public void cargarJugadores(){

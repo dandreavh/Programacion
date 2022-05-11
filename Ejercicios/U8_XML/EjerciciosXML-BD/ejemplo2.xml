@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos>
+    <!-- Comentario A -->
+    <alumno>
+        <nombre>Andrea Vieira</nombre>
+        <edad>28</edad>
+    </alumno>
+    <!-- Comentario B -->
+    <alumno>
+        <nombre>Claudia López</nombre>
+        <edad>27</edad>
+    </alumno>
+</alumnos>
