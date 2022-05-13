@@ -19,14 +19,26 @@ public class Consultas {
 
         try {
             Statement statement = c.createStatement();
+            statement.setQueryTimeout(30);
             ResultSet result = statement.executeQuery("SELECT c.contactFirstName, c.contactLastName, c.country, SUM(p.amount) " +
                     "FROM customers c INNER JOIN payments p " +
                     "ON c.customerNumber = p.customerNumber " +
                     "WHERE c.customerNumber = " + customerNumber);
 
-            System.out.println(result.toString());
+            result.next();
+
+            System.out.println("Total de pagos para el cliente " + customerNumber + ": " + result.getDouble("total"));
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        } finally {
+            if (c != null) {
+                try {
+                    c.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     } // mirar, no está
 
