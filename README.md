@@ -9,3 +9,5 @@ IES Alixar
 -- U5: POO + Herencia, interfaces, comparable y comparator
 -- U6: Ficheros de textos y binarios
 -- U7: Collections
+-- U8: Lectura árbol DOM y STAX
+-- U9: Conexión a BBDD
