@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados>
+    <empleado edad="40">
+        <NSS>X1111111111</NSS>
+        <nombre>Pepe</nombre>
+        <apellidos>Perez</apellidos>
+        <direccion>Aquí</direccion>
+        <email>pepe@gmail.com</email>
+    </empleado>
+    <empleado edad="30">
+        <NSS>Y2222222222</NSS>
+        <nombre>Lola</nombre>
+        <apellidos>Ruiz</apellidos>
+        <direccion>Allí</direccion>
+        <email>lola@gmail.com</email>
+    </empleado>
+    <empleado edad="25">
+        <NSS>Z33333333333</NSS>
+        <nombre>Ana</nombre>
+        <apellidos>Torres</apellidos>
+        <direccion>Cerca</direccion>
+        <email>ana@gmail.com</email>
+    </empleado>
+    <empleado edad="18">
+        <NSS>W44444444444</NSS>
+        <nombre>Luis</nombre>
+        <apellidos>Lopez</apellidos>
+        <direccion>Lejos</direccion>
+        <email>luis@gmail.com</email>
+    </empleado>
+</empleados>
